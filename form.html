@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+<style>
+
+</style>
+
+<body style="background-image:url(./redbackgroundimage2.jpg)";>
+    <form id="tirthaform">
+    <div class="container text-center">
+        <div class="h1 bg-primary mt-3">Tirtha Yatra Registration Form</div>
+
+        <div class="column">
+            
+                <div class=" h5 text-center text-light">
+                    <lable for="">Select Dham<span class="text-danger">*</span></lable>
+                    <select name="dhamName" id="dham" class="form-control">
+                        <option value="-1">--select--</option>
+                        <option value="jagannath">Puri</option>
+                        <option value="badrinath">Badrinath</option>
+                        <option value="Rameswaram">Rameswaram</option>
+                        <option value="Dwarika">Dwarika</option>
+                    </select>
+                
+            </div>
+
+            <div class=" h5 container text-center text-light">
+            
+                    <lable for="">Mode of Transportation<span class="text-danger">*</span></lable>
+                    <select name="transport" id="transport" class="form-control">
+                        <option value="-1">--select--</option>
+                        <option value="1">Bus</option>
+                        <option value="2">Train</option>
+                        <option value="3">Car</option>
+                    </select>
+            
+            </div>
+
+            <div class=" h5 container text-center text-light">
+                <lable for="">Name of Travellers <span class="text-danger">*</span></lable>
+                <input type="text" id="name" name="unname" class="form-control" placeholder="enter your name">
+            </div>
+            <div class="h5 container text-center text-light">
+                <lable for=""> Adhar Number<span class="text-danger">*</span></lable>
+                <input type="text" id="adhar" name="adhar" class="form-control" placeholder="enter your adharnumber">
+        </div>
+        <div class="h5 container text-center text-light">
+            <lable for="">D.O.B<span class="text-danger">*</span></lable>
+            <input type="date" id="dob" name="dob" class="form-control" onchange="calcAge()">
+    </div>
+    <div class="h5 container text-center text-light">
+        <lable for="">Age</lable>
+        <input type="text" id="age" name="age" class="form-control">
+</div>
+    <div class="h5 container text-center text-light">
+        <lable for="">Contact Number <span class="text-danger">*</span></lable>
+        <input type="number" id="cNumber" name="cNumber"class="form-control" placeholder="enter your number">
+    </div>
+    <div class=" h5 container text-center text-light">
+        <lable for="">Emergency Contact Number</lable>
+        <input type="number" id="eNumber" name="eNumber" class="form-control" placeholder="enter your number">
+    </div>
+    <div class=" h5 container text-center text-light">
+        <lable for="">Permanent Address<span class="text-danger">*</span></lable>
+        <input type="text" id="address" name="address" class="form-control" placeholder="enter your address">  
+        </div>
+        <div class="container text-center mt-4">
+            <button class="btn bg-success">Go to Payment</button>
+            <button class="btn bg-primary mx-4" id="submitBtn" onclick="submitForm()">Register</button>
+            </div> 
+        </form>
+            <script src="./form.js"></script>
+        
+    </body>
+
+</html>
